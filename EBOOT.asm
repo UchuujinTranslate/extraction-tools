@@ -2,21 +2,31 @@
 
 .open "isofiles/EBOOT_DEC.BIN","isofiles/EBOOT_patched.BIN",0x8804000 -0xc0
 
-
+//textbox line limit char
 .org 0x8804d28
 	li	a0,0x29
+	
+//speaker y pos
 .org 0x8807d04
 	addiu	a1,a2,0xC0
+
 .org 0x8807db8
 	addiu	a0,a0,0x12
+
+//text y pos
 .org 0x8809788
 	addiu	a0,a0,0xD0
+
 .org 0x88098c8
 	nop	
 .org 0x88098e8
 	addiu	a0,a0,0x15
 .org 0x88098f4
 	addiu	a0,a1,0x12
+
+
+
+//log textbox line limit char
 .org 0x8813b58
 	li	a2,0x29
 	
