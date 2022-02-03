@@ -30,6 +30,21 @@
 .org 0x8813b58
 	li	a2,0x29
 	
+	
+	
+//other limit
+.org 0x08804F54
+	li	a2,0x29
+.org 0x08807374
+	li	a2,0x29
+.org 0x08813770
+	li	a2,0x29
+.org 0x08807434
+	li	a2,0x29
+.org 0x088070E8
+	
+	
+	
 //checksum always true
 .org 0x883b644
 	li	v0,0x1
